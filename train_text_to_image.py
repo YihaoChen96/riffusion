@@ -612,6 +612,7 @@ def main():
     # Preprocessing the datasets.
     # We need to tokenize inputs and targets.
     column_names = dataset["train"].column_names
+    dataset = dataset.rename_column("pseudo_label", "text")  # Rename pseudo_label to text to avoid warning
 
     # 6. Get the column names for input/target.
     dataset_columns = DATASET_NAME_MAPPING.get(args.dataset_name, None)
