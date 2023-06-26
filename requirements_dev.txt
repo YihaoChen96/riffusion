@@ -7,3 +7,5 @@ types-Pillow
 types-requests
 types-setuptools
 types-tqdm
+datasets
+huggingface-hub
